@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Fullstack Reference Azure Deployment Script
+# Banking App Azure Deployment Script
 
 set -e
 
 # Configuration
-RESOURCE_GROUP="fullstack-reference-rg"
+RESOURCE_GROUP="banking-app-rg"
 LOCATION="eastus"
 ENVIRONMENT="dev"
 SUBSCRIPTION_ID=""
@@ -50,7 +50,7 @@ az group create --name "$RESOURCE_GROUP" --location "$LOCATION"
 
 # Generate secure passwords
 echo_info "Generating secure passwords..."
-MONGO_USERNAME="fullstackadmin"
+MONGO_USERNAME="bankingadmin"
 MONGO_PASSWORD=$(openssl rand -base64 32)
 JWT_SECRET=$(openssl rand -base64 64)
 

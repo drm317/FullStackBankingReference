@@ -1,7 +1,7 @@
 {
-  "name": "fullstack-reference",
+  "name": "banking-app",
   "version": "1.0.0",
-  "description": "Full stack reference application with React, Node.js, MongoDB, and Azure deployment",
+  "description": "Banking application built with React, Node.js, MongoDB, and Azure deployment",
   "scripts": {
     "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
     "backend:dev": "cd backend && npm run dev",

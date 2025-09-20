@@ -1,7 +1,7 @@
 {
-  "name": "fullstack-reference-backend",
+  "name": "banking-app-backend",
   "version": "1.0.0",
-  "description": "Full stack reference application backend API",
+  "description": "Banking application backend API",
   "main": "dist/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts",

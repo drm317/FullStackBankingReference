@@ -1,5 +1,5 @@
 @description('The name prefix for all resources')
-param namePrefix string = 'fullstackref'
+param namePrefix string = 'banking'
 
 @description('The location for all resources')
 param location string = resourceGroup().location

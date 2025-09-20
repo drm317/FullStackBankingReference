@@ -1,6 +1,6 @@
-# Full Stack Banking Application
+# SecureBank - Banking Application
 
-A full-stack banking reference application built with Node.js, React, MongoDB, and deployed on Azure. This project demonstrates modern web development practices, security patterns, and cloud deployment strategies.
+A secure, full-stack banking application built with Node.js, React, MongoDB, and deployed on Azure. This project demonstrates modern web development practices, security patterns, and cloud deployment strategies.
 
 ## Features
 
@@ -49,7 +49,7 @@ A full-stack banking reference application built with Node.js, React, MongoDB, a
 ### Prerequisites
 - Node.js 18+ and npm
 - MongoDB 7+
-- Docker and Docker Compose
+- Docker (for individual containers if needed)
 - Azure CLI (for deployment)
 
 ### Local Development
@@ -57,7 +57,6 @@ A full-stack banking reference application built with Node.js, React, MongoDB, a
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd banking-app
    ```
 
 2. **Install dependencies**
@@ -76,11 +75,11 @@ A full-stack banking reference application built with Node.js, React, MongoDB, a
 
 4. **Start MongoDB**
    ```bash
-   # Using Docker
+   # Using Docker (optional)
    docker run -d --name mongodb -p 27017:27017 mongo:7
    
-   # Or using Docker Compose
-   docker-compose up mongodb -d
+   # Or install MongoDB locally
+   # Follow: https://docs.mongodb.com/manual/installation/
    ```
 
 5. **Start the application**
@@ -93,18 +92,13 @@ A full-stack banking reference application built with Node.js, React, MongoDB, a
    npm run frontend:dev # Frontend on http://localhost:3000
    ```
 
-### Using Docker Compose
+### Alternative: MongoDB Setup
 
-```bash
-# Start all services
-docker-compose up -d
+If you prefer not to use Docker for MongoDB, you can:
 
-# View logs
-docker-compose logs -f
-
-# Stop all services
-docker-compose down
-```
+1. **Install MongoDB locally**: Follow [MongoDB installation guide](https://docs.mongodb.com/manual/installation/)
+2. **Use MongoDB Atlas**: Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/atlas)
+3. **Update your .env file** with the appropriate connection string
 
 ## API Endpoints
 
@@ -168,13 +162,13 @@ npm run test
 
 1. **Create resource group**
    ```bash
-   az group create --name fullstack-reference-rg --location eastus
+   az group create --name banking-app-rg --location eastus
    ```
 
 2. **Deploy infrastructure**
    ```bash
    az deployment group create \
-     --resource-group fullstack-reference-rg \
+     --resource-group banking-app-rg \
      --template-file main.bicep \
      --parameters environment=prod
    ```
@@ -210,7 +204,7 @@ npm run test
 ```env
 NODE_ENV=development
 PORT=3001
-MONGODB_URI=mongodb://localhost:27017/fullstack_reference
+MONGODB_URI=mongodb://localhost:27017/banking
 JWT_SECRET=your-super-secret-jwt-key
 ```
 
@@ -222,7 +216,7 @@ REACT_APP_API_URL=http://localhost:3001/api
 ## Project Structure
 
 ```
-fullstack-reference/
+banking-app/
 ├── backend/                 # Node.js API server
 │   ├── src/
 │   │   ├── controllers/     # Route controllers
@@ -248,7 +242,7 @@ fullstack-reference/
 │   └── azure/
 │       ├── main.bicep      # Infrastructure template
 │       └── deploy.sh       # Deployment script
-├── docker-compose.yml      # Local development
+├── docker-compose.yml      # Removed (use individual services)
 └── README.md
 ```
 

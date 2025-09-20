@@ -1,5 +1,5 @@
 // MongoDB initialization script
-db = db.getSiblingDB('fullstack_reference');
+db = db.getSiblingDB('banking');
 
 // Create collections
 db.createCollection('users');
@@ -28,4 +28,4 @@ db.transactions.createIndex({ "status": 1 });
 db.transactions.createIndex({ "fromAccountId": 1, "createdAt": -1 });
 db.transactions.createIndex({ "toAccountId": 1, "createdAt": -1 });
 
-print('Fullstack Reference database initialized with collections and indexes');
+print('Banking database initialized with collections and indexes');

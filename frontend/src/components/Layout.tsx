@@ -26,7 +26,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
     <div className="flex h-screen bg-gray-100">
       <div className="w-64 bg-white shadow-lg">
         <div className="p-6">
-          <h1 className="text-2xl font-bold text-gray-800">FullstackRef</h1>
+          <h1 className="text-2xl font-bold text-gray-800">SecureBank</h1>
           <p className="text-sm text-gray-600 mt-1">Welcome, {user?.firstName}</p>
         </div>
         

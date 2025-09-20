@@ -39,7 +39,7 @@ app.use(errorHandler);
 
 const connectDB = async () => {
   try {
-    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/fullstack_reference';
+    const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/banking';
     await mongoose.connect(mongoUri);
     console.log('Connected to MongoDB');
   } catch (error) {
