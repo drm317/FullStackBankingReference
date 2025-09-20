@@ -1,4 +1,4 @@
-# Fullstack Reference - Full Stack Banking Application
+# Full Stack Banking Application
 
 A full-stack banking reference application built with Node.js, React, MongoDB, and deployed on Azure. This project demonstrates modern web development practices, security patterns, and cloud deployment strategies.
 
