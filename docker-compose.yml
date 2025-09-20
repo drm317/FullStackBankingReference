@@ -1,5 +1,0 @@
-# Docker Compose has been removed from this project
-# For local development, run services individually:
-# - MongoDB: Install locally or use MongoDB Atlas
-# - Backend: cd backend && npm run dev
-# - Frontend: cd frontend && npm run dev
