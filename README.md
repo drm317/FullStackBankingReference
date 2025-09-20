@@ -1,6 +1,6 @@
 # Banking Application
 
-A full stack banking application using Node.js, React, MongoD for deployment on Azure. 
+A full stack banking application using Node.js, React and MongoDB for deployment on Azure. 
 
 ## Features
 
