@@ -92,14 +92,6 @@ A full stack banking application using Node.js, React and MongoDB for deployment
    npm run frontend:dev # Frontend on http://localhost:3000
    ```
 
-### Alternative: MongoDB Setup
-
-If you prefer not to use Docker for MongoDB, you can:
-
-1. **Install MongoDB locally**: Follow [MongoDB installation guide](https://docs.mongodb.com/manual/installation/)
-2. **Use MongoDB Atlas**: Create a free cluster at [MongoDB Atlas](https://www.mongodb.com/atlas)
-3. **Update your .env file** with the appropriate connection string
-
 ## API Endpoints
 
 ### Authentication
