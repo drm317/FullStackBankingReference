@@ -240,14 +240,4 @@ banking-app/
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Roadmap
-
-- [ ] Two-factor authentication
-- [ ] Account statements and reports
-- [ ] Mobile application
-- [ ] Advanced analytics dashboard
-- [ ] Integration with external banking APIs
-- [ ] Notification system
-- [ ] Multi-currency support
+This project is licensed under the MIT License
