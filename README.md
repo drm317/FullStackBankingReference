@@ -1,6 +1,6 @@
-# SecureBank - Banking Application
+# Banking Application
 
-A secure, full-stack banking application built with Node.js, React, MongoDB, and deployed on Azure. This project demonstrates modern web development practices, security patterns, and cloud deployment strategies.
+A full stack banking application using Node.js, React, MongoD for deployment on Azure. 
 
 ## Features
 
